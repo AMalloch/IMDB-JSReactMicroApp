@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import CommentList from "../components/CommentList";
 
 class CommentBox extends Component {
   constructor(props){
@@ -12,6 +12,7 @@ class CommentBox extends Component {
     return (
       <div className="movie-box">
         <h2>Movies</h2>
+        <CommentList data={this.state.data} />
     </div>
     );
   }
